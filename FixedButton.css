@@ -1,0 +1,152 @@
+#snapins_invite {
+  background-color: #fff;
+  font-family: 'Salesforce Sans', sans-serif;
+  overflow: visible;
+  border-radius: pxToRem(8);
+}
+
+.embeddedServiceInvitation {
+  background-color: transparent;
+  box-shadow: 0 pxToRem(7) pxToRem(12) rgb(0 0 0 / 28%);
+  box-shadow: 0 pxToRem(7) pxToRem(12) rgb(0 0 0 / 28%);
+  box-shadow: none;
+}
+
+.embeddedServiceInvitation > .embeddedServiceInvitationHeader {
+  width: inherit;
+  height: pxToRem(32);
+  line-height: pxToRem(32);
+  padding: pxToRem(10);
+  color: #fff;
+  background-color: #222;
+  overflow: initial;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  border-top-left-radius: pxToRem(8);
+  border-top-right-radius: pxToRem(8);
+}
+
+.embeddedServiceInvitationHeader #embeddedServiceAvatar {
+  width: pxToRem(32);
+  height: pxToRem(32);
+  border-radius: 50%;
+}
+
+.embeddedServiceInvitationHeader .embeddedServiceTitleText {
+  font-size: pxToRem(18);
+  color: #fff;
+  overflow: hidden;
+  word-wrap: normal;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  align-self: stretch;
+  flex-grow: 1;
+  max-width: 100%;
+  margin: 0 pxToRem(12);
+}
+
+.embeddedServiceInvitationHeader .embeddedServiceCloseIcon {
+  border: none;
+  border-radius: pxToRem(3);
+  cursor: pointer;
+  position: relative;
+  bottom: 3%;
+  background-color: transparent;
+  width: pxToRem(32);
+  height: pxToRem(32);
+  font-size: pxToRem(23);
+  color: #fff;
+}
+
+.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus {
+  outline: none;
+}
+
+.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:focus::before {
+  content: ' ';
+  position: absolute;
+  top: 11%;
+  left: 7%;
+  width: 85%;
+  height: 85%;
+  background-color: rgb(255 255 255 / 20%);
+  border-radius: pxToRem(4);
+  pointer-events: none;
+}
+
+.embeddedServiceInvitationHeader .embeddedServiceCloseIcon:active,
+.embeddedServiceCloseIcon:hover {
+  background-color: #fff;
+  color: rgb(0 0 0 / 70%);
+  opacity: 70%;
+}
+
+.embeddedServiceInvitation > .embeddedServiceInvitationBody {
+  background-color: #fff;
+  max-height: pxToRem(110);
+  min-width: pxToRem(260);
+  margin: 0 pxToRem(8);
+  font-size: pxToRem(14);
+  line-height: pxToRem(20);
+  overflow: auto;
+}
+
+.embeddedServiceInvitationBody p {
+  color: #333;
+  padding: pxToRem(8);
+  margin: pxToRem(12) 0;
+}
+
+.embeddedServiceInvitation > .embeddedServiceInvitationFooter {
+  width: inherit;
+  color: #fff;
+  text-align: center;
+  padding: pxToRem(10);
+  max-height: pxToRem(50);
+}
+
+.embeddedServiceInvitationFooter > .embeddedServiceActionButton {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-flex;
+  height: 3rem;
+  border-radius: 1.5rem;
+  font-size: 0.9375rem;
+  line-height: 1.0625rem;
+  padding: 0 2rem;
+  color: #fff;
+  background-color: #000;
+  text-transform: uppercase;
+}
+
+.embeddedServiceInvitationFooter > #acceptInvite {
+  color: #fff;
+  font-weight: 500;
+}
+
+.embeddedServiceInvitationFooter > #acceptInvite::before {
+  font-weight: bold;
+}
+
+.embeddedServiceInvitationFooter > #rejectInvite {
+  background-color: #fff;
+  color: #005290;
+}
+
+.embeddedServiceInvitationFooter.button-chat-link.disabled {
+  opacity: 20%;
+  pointer-events: none;
+  cursor: auto;
+}
+
+.embeddedServiceInvitationFooter.button-chat-link {
+  color: white;
+  background-color: black;
+  border: none;
+  margin: 0 auto;
+  display: block;
+}
