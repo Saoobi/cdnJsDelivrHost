@@ -16,6 +16,11 @@ body {
   font-family: "Century Gothic Std", arial, sans-serif !important;
 }
 
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
 .dataPrivacyDisclaimer {
   background-color: #000 !important;
   color: #fff !important;
